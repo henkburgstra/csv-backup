@@ -1,0 +1,8 @@
+Logging met standaard log package, output en prefix redirect
+Config in een apart config bestand, buiten de scope van deze module
+
+type Connection struct {
+	db *sql.DB
+	Driver string // naam driver (odbc, bijvoorbeeld "Native Client 10") of "native"
+	Dialect string // dbms of wire protocol
+}
